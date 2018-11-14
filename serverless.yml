@@ -1,0 +1,31 @@
+service: nightowl-serverless
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: false
+
+package:
+  exclude:
+    - node_modules/**
+    - venv/**
+provider:
+  name: aws
+  runtime: python3.6
+  stage: ${env:ENV_TYPE}
+  environment:
+  region: eu-west-1
+  memorySize: 1024 # optional, in MB, default is 1024
+  timeout: 10
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+          - "s3:*"
+       Resource:
+          - "arn:aws:s3:::${env:INSTALLAPPLICATIONS_S3_BUCKET}"
+          - "arn:aws:s3:::${env:INSTALLAPPLICATIONS_S3_BUCKET}/*"
+functions:
+  nightowl:
+    handler: lambda/nightowl_lambda.lambda_handler
+    events:
+      - schedule: cron(0 0/3 ? * * *)

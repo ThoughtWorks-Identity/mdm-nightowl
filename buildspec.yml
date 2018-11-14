@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - easy_install pip
+      - pip install -r requirements.txt
+      - python generate_dev_json.py
+      - aws s3 cp bootstrap_dev.json s3://tw-dep-installapplications-test

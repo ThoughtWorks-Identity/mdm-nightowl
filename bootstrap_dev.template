@@ -1,0 +1,63 @@
+{
+  "preflight":[],
+  "setupassistant": [
+    {
+      "file": "/Library/Application Support/installapplications/DEPNotify-beta-1.2.pkg",
+      "hash": "{{  DEP_Notify_hash  }}",
+      "name": "DEPNotify-1.2.pkg",
+      "packageid": "menu.nomad.DEPNotify",
+      "type": "package",
+      "url": "{{  DEP_Notify_signed_URL  }}",
+      "version": "1.2"
+    }
+  ],
+  "userland": [
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/caffeinate.py",
+      "hash": "{{ caffeinate_hash  }}",
+      "name": "Caffeinate computer",
+      "type": "rootscript",
+      "url": "{{  caffeinate_script  }}"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/enable_encryption.py",
+      "hash": "{{  enable_filevault_hash  }}",
+      "name": "checking for and enabling filevault full disk encryption",
+      "type": "rootscript",
+      "url": "{{  enable_filevault  }}"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20180207.pkg",
+      "hash": "{{  install_sophos_hash  }}",
+      "name": "Checking for/installing Sophos Anti-Virus",
+      "packageid": "com.thoughtworks.Sophos_for_deployments",
+      "type": "package",
+      "url": "{{ install_sophos  }}",
+      "version": "1.2"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/high_sierra_vm_bless.py",
+      "hash": "{{  high_sierra_vm_bless_hash  }}",
+      "name": "high_sierra_vm_bless.py",
+      "type": "rootscript",
+      "url": "{{  high_sierra_vm_bless_url  }}"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/VMware_Tools.pkg",
+      "hash": "{{  VMware_tools_hash  }}",
+      "name": "VMware Tools",
+      "packageid": "com.vmware.tools.macos.pkg.files",
+      "type": "package",
+      "url": "{{  VMware_tools_url  }}",
+      "version": "10.2.0"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
+      "hash": "{{ Rolzog_script_hash }}",
+      "name": "Registering your laptop in ServiceNow",
+      "type": "userscript",
+      "url": "{{ Rolzog_script_url }}"
+    }
+  ]
+}

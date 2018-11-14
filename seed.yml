@@ -1,0 +1,11 @@
+before_compile:
+  - npm install --save serverless-python-requirements
+before_build:
+  - echo "Run unit tests"
+
+before_deploy:
+  - echo "download pip dependencies to support vendored way of including pip"
+  - echo "sls print"
+
+after_deploy:
+  - echo "Run integration tests"

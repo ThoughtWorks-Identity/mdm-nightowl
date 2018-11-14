@@ -1,0 +1,40 @@
+{
+  "preflight":[],
+  "setupassistant": [
+    {
+      "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
+      "hash": "{{  DEP_Notify_hash  }}",
+      "name": "DEPNotify-1.0.3.pkg",
+      "packageid": "menu.nomad.DEPNotify",
+      "type": "package",
+      "url": "{{  DEP_Notify_signed_URL  }}",
+      "version": "1.0.3"
+    }
+  ],
+  "userland": [
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/caffeinate.py",
+      "hash": "{{ caffeinate_hash  }}",
+      "name": "Caffeinate computer",
+      "type": "rootscript",
+      "url": "{{  caffeinate_script  }}"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20180207.pkg",
+      "hash": "{{  install_sophos_hash  }}",
+      "name": "Sophos Anti-Virus",
+      "packageid": "com.thoughtworks.Sophos_for_deployments",
+      "type": "package",
+      "url": "{{ install_sophos  }}",
+      "version": "20180207"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
+      "hash": "{{ Rolzog_script_hash }}",
+      "name": "Registering your laptop in ServiceNow",
+      "type": "userscript",
+      "url": "{{ Rolzog_script_url }}"
+    }
+  ]
+}
