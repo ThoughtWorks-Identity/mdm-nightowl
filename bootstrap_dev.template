@@ -58,7 +58,7 @@
      "packageid": "com.github.munki.pkg.RolzogCheck",
      "type": "package",
      "url": "{{ Rolzog_check_url }}",
-     "version": "1.0",
+     "version": "1.0"
    }
   ]
 }
