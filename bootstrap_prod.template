@@ -21,13 +21,13 @@
       "url": "{{  caffeinate_script  }}"
     },
     {
-      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20180207.pkg",
+      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20181112.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Sophos Anti-Virus",
       "packageid": "com.thoughtworks.Sophos_for_deployments",
       "type": "package",
       "url": "{{ install_sophos  }}",
-      "version": "20180207"
+      "version": "1.0"
     },
     {
       "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
@@ -35,6 +35,15 @@
       "name": "Registering your laptop in ServiceNow",
       "type": "userscript",
       "url": "{{ Rolzog_script_url }}"
-    }
+    },
+    {
+     "file": "/Library/Application Support/installapplications/RolzogCheck-1.0.pkg",
+     "hash": "{{ Rolzog_check_hash }}",
+     "name": "Checking laptop registration has completed...",
+     "packageid": "com.github.munki.pkg.RolzogCheck",
+     "type": "package",
+     "url": "{{ Rolzog_check_url }}",
+     "version": "1.0"
+   }
   ]
 }
