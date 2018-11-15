@@ -44,20 +44,21 @@
       "url": "{{  high_sierra_vm_bless_url  }}"
     },
     {
-      "file": "/Library/Application Support/installapplications/VMware_Tools.pkg",
-      "hash": "{{  VMware_tools_hash  }}",
-      "name": "VMware Tools",
-      "packageid": "com.vmware.tools.macos.pkg.files",
-      "type": "package",
-      "url": "{{  VMware_tools_url  }}",
-      "version": "10.2.0"
-    },
-    {
       "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
       "hash": "{{ Rolzog_script_hash }}",
       "name": "Registering your laptop in ServiceNow",
       "type": "userscript",
       "url": "{{ Rolzog_script_url }}"
-    }
+    },
+    {
+     "required": true,
+     "file": "/Library/Application Support/installapplications/RolzogCheck-1.0.pkg",
+     "hash": "{{ Rolzog_check_hash }}",
+     "name": "Checking laptop registration has completed...",
+     "packageid": "com.github.munki.pkg.RolzogCheck",
+     "type": "package",
+     "url": "{{ Rolzog_check_url }}",
+     "version": "1.0",
+   }
   ]
 }
