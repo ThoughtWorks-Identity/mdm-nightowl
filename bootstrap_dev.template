@@ -16,13 +16,13 @@
       "donotwait": true,
       "file": "/Library/Application Support/installapplications/caffeinate.py",
       "hash": "{{ caffeinate_hash  }}",
-      "name": "Caffeinate computer",
+      "name": "Caffeinate computer (prevent system sleep for 10 minutes)",
       "type": "rootscript",
       "url": "{{  caffeinate_script  }}"
     },
     {
       "required": true,
-      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20180207.pkg",
+      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20181116.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Checking for/installing Sophos Anti-Virus",
       "packageid": "com.thoughtworks.Sophos_for_deployments",
@@ -40,7 +40,7 @@
     {
       "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
       "hash": "{{ Rolzog_script_hash }}",
-      "name": "Registering your laptop in ServiceNow",
+      "name": "laptop registration workflow",
       "type": "userscript",
       "url": "{{ Rolzog_script_url }}"
     },
