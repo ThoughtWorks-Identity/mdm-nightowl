@@ -21,13 +21,7 @@
       "url": "{{  caffeinate_script  }}"
     },
     {
-      "file": "/Library/Application Support/installapplications/enable_encryption.py",
-      "hash": "{{  enable_filevault_hash  }}",
-      "name": "checking for and enabling filevault full disk encryption",
-      "type": "rootscript",
-      "url": "{{  enable_filevault  }}"
-    },
-    {
+      "required": true,
       "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20180207.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Checking for/installing Sophos Anti-Virus",
