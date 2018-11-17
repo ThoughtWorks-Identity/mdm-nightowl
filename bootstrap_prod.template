@@ -16,14 +16,15 @@
       "donotwait": true,
       "file": "/Library/Application Support/installapplications/caffeinate.py",
       "hash": "{{ caffeinate_hash  }}",
-      "name": "Caffeinate computer",
+      "name": "Caffeinate computer (prevent system sleep for 10 minutes)",
       "type": "rootscript",
       "url": "{{  caffeinate_script  }}"
     },
     {
-      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20181112.pkg",
+      "required": true,
+      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20181116.pkg",
       "hash": "{{  install_sophos_hash  }}",
-      "name": "Sophos Anti-Virus",
+      "name": "Checking for/installing Sophos Anti-Virus",
       "packageid": "com.thoughtworks.Sophos_for_deployments",
       "type": "package",
       "url": "{{ install_sophos  }}",
@@ -32,11 +33,12 @@
     {
       "file": "/Library/Application Support/installapplications/userscripts/Rolzog.sh",
       "hash": "{{ Rolzog_script_hash }}",
-      "name": "Registering your laptop in ServiceNow",
+      "name": "laptop registration workflow",
       "type": "userscript",
       "url": "{{ Rolzog_script_url }}"
     },
     {
+     "required": true,
      "file": "/Library/Application Support/installapplications/RolzogCheck-1.0.pkg",
      "hash": "{{ Rolzog_check_hash }}",
      "name": "Checking laptop registration has completed...",
