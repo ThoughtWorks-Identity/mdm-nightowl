@@ -46,13 +46,13 @@
     },
     {
      "required": true,
-     "file": "/Library/Application Support/installapplications/RolzogCheck-1.0.pkg",
+     "file": "/Library/Application Support/installapplications/RolzogCheck-1.1.pkg",
      "hash": "{{ Rolzog_check_hash }}",
      "name": "Checking laptop registration has completed...",
      "packageid": "com.github.munki.pkg.RolzogCheck",
      "type": "package",
      "url": "{{ Rolzog_check_url }}",
-     "version": "1.0"
+     "version": "1.1"
    }
   ]
 }
