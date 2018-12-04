@@ -22,7 +22,7 @@
     },
     {
       "required": true,
-      "file": "/Library/Application Support/installapplications/Sophos_for_deployments-20181128.pkg",
+      "file": "/Library/Application Support/installapplications/Sophos-AntiVirus-1.0.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Checking for/installing Sophos Anti-Virus",
       "packageid": "com.thoughtworks.Sophos_for_deployments",
