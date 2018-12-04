@@ -25,10 +25,10 @@
       "file": "/Library/Application Support/installapplications/Sophos-AntiVirus-1.0.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Checking for/installing Sophos Anti-Virus",
-      "packageid": "com.thoughtworks.Sophos_for_deployments",
+      "packageid": "com.thoughtworks.pkg.Sophos_for_deployments",
       "type": "package",
       "url": "{{ install_sophos  }}",
-      "version": "1.2"
+      "version": "1.0"
     },
     {
       "file": "/Library/Application Support/installapplications/high_sierra_vm_bless.py",
