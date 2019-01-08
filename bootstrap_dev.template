@@ -9,6 +9,15 @@
       "type": "package",
       "url": "{{  DEP_Notify_signed_URL  }}",
       "version": "1.2"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/Notify-dev-1.0.pkg",
+      "hash": "{{  Notify_hash  }}",
+      "name": "Notify-dev-1.0.pkg",
+      "packageid": "com.thoughtworks.pkg.notify",
+      "type": "package",
+      "url": "{{  Notify_signed_URL  }}",
+      "version": "1.0"
     }
   ],
   "userland": [
