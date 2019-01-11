@@ -2,6 +2,7 @@
   "preflight":[],
   "setupassistant": [
     {
+      "required": true,
       "file": "/Library/Application Support/installapplications/DEPNotify-dev-11.3.pkg",
       "hash": "{{  DEP_Notify_hash  }}",
       "name": "DEPNotify-1.2.pkg",
