@@ -11,6 +11,7 @@
       "version": "1.2"
     },
     {
+      "required": true,
       "file": "/Library/Application Support/installapplications/Notify-dev-1.0.pkg",
       "hash": "{{  Notify_hash  }}",
       "name": "Notify-dev-1.0.pkg",
