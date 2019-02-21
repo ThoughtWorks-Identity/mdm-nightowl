@@ -3,7 +3,7 @@
   "setupassistant": [
     {
       "required": true,
-      "file": "/Library/Application Support/installapplications/DEPNotify-dev-11.3.pkg",
+      "file": "/Library/Application Support/installapplications/DEPNotify-11.3.pkg",
       "hash": "{{  DEP_Notify_hash  }}",
       "name": "DEPNotify-1.2.pkg",
       "packageid": "menu.nomad.DEPNotify",
@@ -13,7 +13,7 @@
     },
     {
       "required": true,
-      "file": "/Library/Application Support/installapplications/Notify-dev-1.0.pkg",
+      "file": "/Library/Application Support/installapplications/Notify-1.0.pkg",
       "hash": "{{  Notify_hash  }}",
       "name": "Notify-dev-1.0.pkg",
       "packageid": "com.thoughtworks.pkg.notify",
@@ -33,7 +33,7 @@
     },
     {
       "required": true,
-      "file": "/Library/Application Support/installapplications/Sophos-AntiVirus-dev-1.0.pkg",
+      "file": "/Library/Application Support/installapplications/Sophos-AntiVirus-1.0.pkg",
       "hash": "{{  install_sophos_hash  }}",
       "name": "Checking for/installing Sophos Anti-Virus",
       "packageid": "com.thoughtworks.pkg.Sophos_for_deployments",
@@ -57,7 +57,7 @@
     },
     {
      "required": true,
-     "file": "/Library/Application Support/installapplications/RolzogCheck-dev-1.2.pkg",
+     "file": "/Library/Application Support/installapplications/RolzogCheck-1.2.pkg",
      "hash": "{{ Rolzog_check_hash }}",
      "name": "Checking laptop registration has completed...",
      "packageid": "com.github.munki.pkg.RolzogCheck",
