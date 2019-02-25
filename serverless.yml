@@ -29,3 +29,7 @@ functions:
     handler: lambda/nightowl_lambda.lambda_handler
     events:
       - schedule: cron(0 0/3 ? * * *)
+      - http:
+          path: /
+          method: post
+          private: true
