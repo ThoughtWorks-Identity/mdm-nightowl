@@ -45,13 +45,13 @@ def lambda_handler(event, context):
     #Variables
     # s3_bucket = "tw-dep-installapplications-dev"
     expirytime = 60*60*24*7
-    
+
     working_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     templateLoader = jinja2.FileSystemLoader(searchpath=working_directory)
     templateEnv = jinja2.Environment(loader=templateLoader)
     template = templateEnv.get_template(bootstrap_template)
     filename = "/tmp/" + bootstrap_file
-    
+
     # ias_file_output = {
     #                 "DEP_Notify_hash": gethash(s3_bucket, "setupassistant", "DEPNotify-beta-1.2.pkg", ),
     #                 "DEP_Notify_signed_URL": Create_Signed_URL(s3_bucket, "setupassistant/DEPNotify-beta-1.2.pkg", expirytime),
@@ -66,7 +66,7 @@ def lambda_handler(event, context):
     #                 "VMWare_tools_hash": gethash(s3_bucket, "userland", "VMware_Tools.pkg"),
     #                 "VMWare_tools_url": Create_Signed_URL(s3_bucket, "userland/VMware_Tools.pkg", expirytime),
     #                 }
-    
+
     ias_file_output = {}
     with open(bootstrap_template, 'r') as f:
         json_template = json.load(f)
@@ -88,6 +88,13 @@ def lambda_handler(event, context):
     complete = template.render(ias_file_output)
     outputfile.write(complete)
     outputfile.close()
-    
+
     print("Uploading {} to {}".format(filename, s3_bucket))
     s3_client.upload_file(filename, s3_bucket, bootstrap_file)
+
+
+    return {
+        'statusCode': 200,
+        'headers': {'Content-Type': 'application/json'},
+        'body': 'NightOwl Run was triggered'
+        }
