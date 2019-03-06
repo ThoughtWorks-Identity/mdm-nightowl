@@ -2,13 +2,24 @@
   "preflight":[],
   "setupassistant": [
     {
-      "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
+      "required": true,
+      "file": "/Library/Application Support/installapplications/DEPNotify-11.3.pkg",
       "hash": "{{  DEP_Notify_hash  }}",
-      "name": "DEPNotify-1.0.3.pkg",
+      "name": "DEPNotify-1.2.pkg",
       "packageid": "menu.nomad.DEPNotify",
       "type": "package",
       "url": "{{  DEP_Notify_signed_URL  }}",
-      "version": "1.0.3"
+      "version": "1.2"
+    },
+    {
+      "required": true,
+      "file": "/Library/Application Support/installapplications/Notify-1.0.pkg",
+      "hash": "{{  Notify_hash  }}",
+      "name": "Notify-dev-1.0.pkg",
+      "packageid": "com.thoughtworks.pkg.notify",
+      "type": "package",
+      "url": "{{  Notify_signed_URL  }}",
+      "version": "1.0"
     }
   ],
   "userland": [
@@ -16,7 +27,7 @@
       "donotwait": true,
       "file": "/Library/Application Support/installapplications/caffeinate.py",
       "hash": "{{ caffeinate_hash  }}",
-      "name": "Caffeinate computer (prevent system sleep for 20 minutes)",
+      "name": "prevent system sleep for 20 minutes",
       "type": "rootscript",
       "url": "{{  caffeinate_script  }}"
     },
@@ -24,7 +35,7 @@
       "required": true,
       "file": "/Library/Application Support/installapplications/Sophos-AntiVirus-1.0.pkg",
       "hash": "{{  install_sophos_hash  }}",
-      "name": "Checking for/installing Sophos Anti-Virus",
+      "name": "Check for Sophos Anti-Virus",
       "packageid": "com.thoughtworks.pkg.Sophos_for_deployments",
       "type": "package",
       "url": "{{ install_sophos  }}",
