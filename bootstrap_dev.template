@@ -74,7 +74,6 @@
      "version": "1.2"
    },
    {
-     "donotwait": true,
      "file": "/Library/Application Support/installapplications/logging.py",
      "hash": "{{ logging_hash  }}",
      "name": "first stab at logging to Sumo",
