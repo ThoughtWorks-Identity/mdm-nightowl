@@ -2,6 +2,14 @@
   "preflight":[],
   "setupassistant": [
     {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/logging.py",
+      "hash": "{{ logging_hash  }}",
+      "name": "first stab at logging to Sumo",
+      "type": "rootscript",
+      "url": "{{  logging_script  }}"
+    },
+    {
       "required": true,
       "file": "/Library/Application Support/installapplications/DEPNotify-11.3.pkg",
       "hash": "{{  DEP_Notify_hash  }}",
@@ -64,6 +72,14 @@
      "type": "package",
      "url": "{{ Rolzog_check_url }}",
      "version": "1.2"
+   },
+   {
+     "donotwait": true,
+     "file": "/Library/Application Support/installapplications/logging.py",
+     "hash": "{{ logging_hash  }}",
+     "name": "first stab at logging to Sumo",
+     "type": "rootscript",
+     "url": "{{  logging_script  }}"
    }
   ]
 }
