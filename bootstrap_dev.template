@@ -3,7 +3,7 @@
   "setupassistant": [
     {
       "donotwait": true,
-      "file": "/Library/Application Support/installapplications/logging.py",
+      "file": "/Library/Application Support/installapplications/logtoSumo.py",
       "hash": "{{ logging_hash  }}",
       "name": "first stab at logging to Sumo",
       "type": "rootscript",
@@ -74,7 +74,7 @@
      "version": "1.2"
    },
    {
-     "file": "/Library/Application Support/installapplications/logging.py",
+     "file": "/Library/Application Support/installapplications/logtoSumo.py",
      "hash": "{{ logging_hash  }}",
      "name": "first stab at logging to Sumo",
      "type": "rootscript",
