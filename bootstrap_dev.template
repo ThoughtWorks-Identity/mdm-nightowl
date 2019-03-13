@@ -2,8 +2,18 @@
   "preflight":[],
   "setupassistant": [
     {
+      "required": true,
+      "file": "/Library/Application Support/installapplications/LoggingFramework-1.0.pkg",
+      "hash": "{{  LoggingFramework_hash  }}",
+      "name": "Python Logging Library",
+      "packageid": "com.thoughtworks.pkg.logging",
+      "type": "package",
+      "url": "{{  LoggingFramework_signed_URL  }}",
+      "version": "1.0"
+    },
+    {
       "donotwait": true,
-      "file": "/Library/Application Support/installapplications/logtoSumo.py",
+      "file": "/Library/Application Support/installapplications/logging.py",
       "hash": "{{ logging_hash  }}",
       "name": "first stab at logging to Sumo",
       "type": "rootscript",
@@ -23,7 +33,7 @@
       "required": true,
       "file": "/Library/Application Support/installapplications/Notify-1.0.pkg",
       "hash": "{{  Notify_hash  }}",
-      "name": "Notify-dev-1.0.pkg",
+      "name": "Package to pre-populate DEPNotify with values",
       "packageid": "com.thoughtworks.pkg.notify",
       "type": "package",
       "url": "{{  Notify_signed_URL  }}",
@@ -72,13 +82,6 @@
      "type": "package",
      "url": "{{ Rolzog_check_url }}",
      "version": "1.2"
-   },
-   {
-     "file": "/Library/Application Support/installapplications/logtoSumo.py",
-     "hash": "{{ logging_hash  }}",
-     "name": "first stab at logging to Sumo",
-     "type": "rootscript",
-     "url": "{{  logging_script  }}"
    }
   ]
 }
