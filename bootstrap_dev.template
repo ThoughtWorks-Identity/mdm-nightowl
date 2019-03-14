@@ -13,11 +13,11 @@
     },
     {
       "donotwait": true,
-      "file": "/Library/Application Support/installapplications/logging.py",
-      "hash": "{{ logging_hash  }}",
+      "file": "/Library/Application Support/installapplications/send_log.py",
+      "hash": "{{ send_log_hash  }}",
       "name": "first stab at logging to Sumo",
       "type": "rootscript",
-      "url": "{{  logging_script  }}"
+      "url": "{{  send_log_script  }}"
     },
     {
       "required": true,
